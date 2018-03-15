@@ -123,9 +123,6 @@ public class InteractionObject : MonoBehaviour
 		//execute the special action
 		switch (doSpecialAction)
 		{
-		case SpecialActions.NEXTLEVEL:
-			GameLogic.game.nextLevel();
-			break;
 		case SpecialActions.RESTARTLEVEL:
 			GameLogic.game.restartLevel();
 			break;

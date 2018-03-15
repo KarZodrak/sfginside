@@ -87,16 +87,6 @@ public class GameLogic : MonoBehaviour
 		_state.lateUpdate(this);
 	}
 
-	// switches to next ingame level
-	public void nextLevel()
-	{
-		//increase level
-		_data.levelIndex++;
-		_data.gamePaused = false;
-		//start playing level
-		changeState(new PlayState());
-	}
-
 	// restart this level
 	public void restartLevel()
 	{

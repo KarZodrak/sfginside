@@ -76,10 +76,10 @@ public class InGameUI : MonoBehaviour
     }
 
     //load new level with level index as parameter
-    public void playLevel(int i)
+    public void playLevel(string levelname)
     {
         //set levelindex
-        GameLogic.game.data.levelIndex = i;
+        GameLogic.game.data.levelName = levelname;
         //unpause game
         GameLogic.game.data.gamePaused = false;
         //switch to play state

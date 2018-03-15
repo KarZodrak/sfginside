@@ -12,7 +12,7 @@ public class PlayState : IGameState
 	public void enterState(GameLogic game)
 	{
         //load corect level (read levelindex form data)
-        SceneManager.LoadScene("Level" +GameLogic.game.data.levelIndex);
+        SceneManager.LoadScene(GameLogic.game.data.levelName);
 	}
 
 	public void update(GameLogic game)

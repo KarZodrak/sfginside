@@ -6,7 +6,7 @@
 
 public class GameData 
 {
-	public int levelIndex = 0;
+    public string levelName = "hub_zone";
 	public bool gamePaused = false;
 	public bool playerWins = true;
 }
