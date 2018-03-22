@@ -125,7 +125,7 @@ public class InteractionObject : MonoBehaviour
 		{
         case SpecialActions.TO_HUB_LEVEL:
             //set levelindex
-            GameLogic.game.data.levelName = "hub_level";
+            GameLogic.game.data.levelName = "hub_zone";
             //unpause game
             GameLogic.game.data.gamePaused = false;
             //switch to play state

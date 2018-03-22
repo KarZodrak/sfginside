@@ -458,7 +458,7 @@ MonoBehaviour:
   enableInteractionObjects: []
   disableInteractionObjects: []
   playAudio: {fileID: 0}
-  doSpecialAction: 0
+  doSpecialAction: 1
 --- !u!23 &528587209
 MeshRenderer:
   m_ObjectHideFlags: 0
