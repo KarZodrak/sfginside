@@ -680,7 +680,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69584de8897fa1a4ab57bdf3d1fe6b5c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.7062
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69584de8897fa1a4ab57bdf3d1fe6b5c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1678,7 +1678,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 897913077}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.54, z: 3.6}
+  m_LocalPosition: {x: 9.15, y: 2.16, z: 3.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2070,7 +2070,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4357613237153596, guid: c3a40555338973d469f1519969940047, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4357613237153596, guid: c3a40555338973d469f1519969940047, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2078,7 +2078,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4357613237153596, guid: c3a40555338973d469f1519969940047, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: 4357613237153596, guid: c3a40555338973d469f1519969940047, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3232,7 +3232,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 8f20c3695795db34e9fc0148591a12a4, type: 2}
+  - {fileID: 2100000, guid: 2214ff33fa48e0c4ebafa702458984d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3281,7 +3281,7 @@ Transform:
   m_GameObject: {fileID: 2103754675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 30, y: 1, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
