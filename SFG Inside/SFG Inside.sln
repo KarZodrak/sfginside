@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFG Inside", "SFG Inside.csproj", "{4CB0709A-E375-D681-7A65-7312986A31BA}"
 EndProject
 Global
