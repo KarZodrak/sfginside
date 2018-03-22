@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 24a8b1078d60947d29cb7119383db0a4
+folderAsset: yes
+timeCreated: 1521716058
+=======
 guid: 11a594bce183d3947a8916fa203eef1c
 folderAsset: yes
 timeCreated: 1521712049
+>>>>>>> origin/marielle
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

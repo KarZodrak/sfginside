@@ -1,8 +1,13 @@
 fileFormatVersion: 2
 guid: 8ce9876d4e4d29d49a7ca4cbf4fa0e67
 folderAsset: yes
+<<<<<<< HEAD
 timeCreated: 1521109109
 licenseType: Pro
+=======
+timeCreated: 1521716341
+licenseType: Free
+>>>>>>> origin/marielle
 DefaultImporter:
   externalObjects: {}
   userData: 
