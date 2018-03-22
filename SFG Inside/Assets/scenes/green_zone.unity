@@ -1384,15 +1384,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 69584de8897fa1a4ab57bdf3d1fe6b5c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -9.5
+      value: -3.58
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69584de8897fa1a4ab57bdf3d1fe6b5c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.97
+      value: 1.64
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69584de8897fa1a4ab57bdf3d1fe6b5c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -17.56
+      value: -16.03
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69584de8897fa1a4ab57bdf3d1fe6b5c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3079,8 +3079,7 @@ MonoBehaviour:
   interactionRange: 3
   neededItem: 
   activateObjects: []
-  deactivateObjects:
-  - {fileID: 0}
+  deactivateObjects: []
   enableInteractionObjects: []
   disableInteractionObjects: []
   playAudio: {fileID: 0}
