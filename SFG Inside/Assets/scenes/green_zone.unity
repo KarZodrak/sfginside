@@ -558,6 +558,7 @@ GameObject:
   - component: {fileID: 117501090}
   - component: {fileID: 117501089}
   - component: {fileID: 117501088}
+  - component: {fileID: 117501093}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -635,7 +636,7 @@ Canvas:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 117501087}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -673,6 +674,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &117501093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117501087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768754e14ba01a748a72f95b4dc03603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCanvas: {fileID: 0}
 --- !u!1 &124416471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,15 +1384,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 69584de8897fa1a4ab57bdf3d1fe6b5c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.09
+      value: -9.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69584de8897fa1a4ab57bdf3d1fe6b5c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 16.11
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69584de8897fa1a4ab57bdf3d1fe6b5c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 8.14
+      value: -17.56
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69584de8897fa1a4ab57bdf3d1fe6b5c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2980,10 +2993,10 @@ GameObject:
   - component: {fileID: 848473319}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Item
+  m_TagString: InteractionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &848473315
 MeshRenderer:
@@ -3066,7 +3079,8 @@ MonoBehaviour:
   interactionRange: 3
   neededItem: 
   activateObjects: []
-  deactivateObjects: []
+  deactivateObjects:
+  - {fileID: 0}
   enableInteractionObjects: []
   disableInteractionObjects: []
   playAudio: {fileID: 0}
@@ -4079,6 +4093,10 @@ Prefab:
     - target: {fileID: 400002, guid: ca90c396dc4ab9745a326c1d3ea0fdb2, type: 2}
       propertyPath: m_LocalPosition.x
       value: -7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ca90c396dc4ab9745a326c1d3ea0fdb2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ca90c396dc4ab9745a326c1d3ea0fdb2, type: 2}
