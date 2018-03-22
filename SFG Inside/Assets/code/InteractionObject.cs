@@ -11,7 +11,7 @@ using System.Collections;
 public enum SpecialActions
 {
 	NONE,
-	NEXTLEVEL,
+    TO_HUB_LEVEL,
 	RESTARTLEVEL,
 	ENDSCREEN
 }
@@ -123,7 +123,15 @@ public class InteractionObject : MonoBehaviour
 		//execute the special action
 		switch (doSpecialAction)
 		{
-		case SpecialActions.RESTARTLEVEL:
+        case SpecialActions.TO_HUB_LEVEL:
+            //set levelindex
+            GameLogic.game.data.levelName = "hub_level";
+            //unpause game
+            GameLogic.game.data.gamePaused = false;
+            //switch to play state
+            GameLogic.game.changeState(new PlayState());
+            break;
+        case SpecialActions.RESTARTLEVEL:
 			GameLogic.game.restartLevel();
 			break;
 		case SpecialActions.ENDSCREEN:
