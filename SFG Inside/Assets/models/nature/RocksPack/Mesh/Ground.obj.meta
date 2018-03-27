@@ -1,18 +1,23 @@
 fileFormatVersion: 2
-guid: 725dee3206675764e9ddf6a6e2f736f1
+guid: d5082037dc865384e9428778c587c227
 timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Group003
-    100002: //RootNode
-    400000: Group003
-    400002: //RootNode
-    2300000: Group003
-    3300000: Group003
-    4300000: Group003
+    100000: //RootNode
+    100002: Plane001
+    400000: //RootNode
+    400002: Plane001
+    2300000: Plane001
+    3300000: Plane001
+    4300000: Plane001
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plane001Mat
+    second: {fileID: 2100000, guid: a9eedb5c020f57641a72fdddbccfe5bd, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
