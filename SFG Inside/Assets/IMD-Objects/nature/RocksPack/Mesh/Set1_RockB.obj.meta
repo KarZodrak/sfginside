@@ -1,23 +1,23 @@
 fileFormatVersion: 2
-guid: 725dee3206675764e9ddf6a6e2f736f1
+guid: 13a78d144303fc343b4f6071af4f9b12
 timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Group003
+    100000: Group001
     100002: //RootNode
-    400000: Group003
+    400000: Group001
     400002: //RootNode
-    2300000: Group003
-    3300000: Group003
-    4300000: Group003
+    2300000: Group001
+    3300000: Group001
+    4300000: Group001
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Group003Mat
-    second: {fileID: 2100000, guid: 5c638093613fabf4493f93768ef06037, type: 2}
+      name: Group001Mat
+    second: {fileID: 2100000, guid: 41c06391759b92e4e8db13aa99d220b3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
