@@ -313,12 +313,15 @@
     <Compile Include="Assets\code\GameStates\MainMenuState.cs" />
     <Compile Include="Assets\code\GameStates\PlayState.cs" />
     <Compile Include="Assets\code\Helpers\CanvasEnabler.cs" />
+    <Compile Include="Assets\code\Helpers\SmoothMouseLook.cs" />
     <Compile Include="Assets\code\InteractionObject.cs" />
     <Compile Include="Assets\code\Inventory.cs" />
     <Compile Include="Assets\code\Item.cs" />
+    <Compile Include="Assets\code\NPC\NPC.cs" />
     <Compile Include="Assets\code\PlayerInteraction.cs" />
     <Compile Include="Assets\code\PlayerMovement.cs" />
     <Compile Include="Assets\code\UI\CreditsUI.cs" />
+    <Compile Include="Assets\code\UI\DialogUI.cs" />
     <Compile Include="Assets\code\UI\EndGameUI.cs" />
     <Compile Include="Assets\code\UI\InGameUI.cs" />
     <Compile Include="Assets\code\UI\IntroUI.cs" />
