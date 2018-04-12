@@ -37,9 +37,15 @@ public class PlayerInteraction : MonoBehaviour
 						// pickup item
 						clickedItem.pickUp(gameObject);
 					}
-				} 
-				//check if we clicked on an interaction object
-				else if (hit.collider.tag == "InteractionObject")
+				}
+                // check if we clicked on an npc
+                if (hit.collider.tag == "NPC")
+                {
+                    // get interaction component and execute its interaction
+                    hit.transform.GetComponent<NPC>().startDialog(gameObject);
+                }
+                //check if we clicked on an interaction object
+                else if (hit.collider.tag == "InteractionObject")
 				{
                     // get interaction component and execute its interaction
                     if (!hit.transform.GetComponent<InteractionObject>().isTrigger)
