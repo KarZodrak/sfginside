@@ -41,8 +41,11 @@ public class PlayerInteraction : MonoBehaviour
 				//check if we clicked on an interaction object
 				else if (hit.collider.tag == "InteractionObject")
 				{
-					// get interaction component and execute its interaction
-					hit.transform.GetComponent<InteractionObject>().doAction(gameObject, _itemAtHand);
+                    // get interaction component and execute its interaction
+                    if (!hit.transform.GetComponent<InteractionObject>().isTrigger)
+                    {
+                        hit.transform.GetComponent<InteractionObject>().doAction(gameObject, _itemAtHand);
+                    }
 				}
 				//chek if we hit not the player
 				else if (hit.collider.tag != "Player")

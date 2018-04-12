@@ -12,13 +12,17 @@ public enum SpecialActions
 {
 	NONE,
     TO_HUB_LEVEL,
+    TO_RED_ZONE,
+    TO_GREEN_ZONE,
+    TO_BLUE_ZONE,
 	RESTARTLEVEL,
 	ENDSCREEN
 }
 
 public class InteractionObject : MonoBehaviour 
 {
-	//public accessible properties
+    //public accessible properties
+    public bool isTrigger = false;
 	public bool interactionEnabled = true;
 	public float interactionRange = 3f;
 	public string neededItem = "";
@@ -38,8 +42,16 @@ public class InteractionObject : MonoBehaviour
 		gameObject.tag = "InteractionObject";
 	}
 
-	//execute action depending on the designers setup
-	public void doAction(GameObject player, Item itemInHand = null)
+    void OnTriggerEnter(Collider other)
+    {
+        if (isTrigger)
+        {
+            doAction(other.gameObject);
+        }
+    }
+
+    //execute action depending on the designers setup
+    public void doAction(GameObject player, Item itemInHand = null)
 	{
 		// check if player is allowed to exectue the action
 		if (isActionAllowed(player, itemInHand))
@@ -103,10 +115,10 @@ public class InteractionObject : MonoBehaviour
 			return false;
 		}
 		// check interaction range
-		if (Vector3.Distance(player.transform.position, transform.position) > interactionRange)
+		if (Vector3.Distance(player.transform.position, transform.position) > interactionRange && !isTrigger)
 		{
-			Debug.Log("'" + gameObject.name + "' is to far away. (" + Vector3.Distance(player.transform.position, transform.position) + ")");
-			return false;
+            Debug.Log("'" + gameObject.name + "' is to far away. (" + Vector3.Distance(player.transform.position, transform.position) + ")");
+            return false;
 		}
 		// check if item requirement is ok
 		if ((neededItem == "" && itemInHand != null) || (neededItem != "" && (itemInHand == null || neededItem != itemInHand.name)))
@@ -131,7 +143,31 @@ public class InteractionObject : MonoBehaviour
             //switch to play state
             GameLogic.game.changeState(new PlayState());
             break;
-        case SpecialActions.RESTARTLEVEL:
+        case SpecialActions.TO_RED_ZONE:
+            //set levelindex
+            GameLogic.game.data.levelName = "red_zone";
+            //unpause game
+            GameLogic.game.data.gamePaused = false;
+            //switch to play state
+            GameLogic.game.changeState(new PlayState());
+            break;
+        case SpecialActions.TO_GREEN_ZONE:
+            //set levelindex
+            GameLogic.game.data.levelName = "green_zone";
+            //unpause game
+            GameLogic.game.data.gamePaused = false;
+            //switch to play state
+            GameLogic.game.changeState(new PlayState());
+            break;
+        case SpecialActions.TO_BLUE_ZONE:
+            //set levelindex
+            GameLogic.game.data.levelName = "blue_zone";
+            //unpause game
+            GameLogic.game.data.gamePaused = false;
+            //switch to play state
+            GameLogic.game.changeState(new PlayState());
+            break;
+            case SpecialActions.RESTARTLEVEL:
 			GameLogic.game.restartLevel();
 			break;
 		case SpecialActions.ENDSCREEN:
