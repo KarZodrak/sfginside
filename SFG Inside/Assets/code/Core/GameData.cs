@@ -16,10 +16,12 @@ public class GameData
 
     //save point
     public bool checkpointsEnabled = true;
-    public Vector3 lastCheckpoint;
+    public Vector3 lastCheckpoint = Vector3.zero;
 
     //dialogs
     public int activeDialogIndex = 0;
     public string speakerName = "";
     public List<string> activeDialog = new List<string>();
+
+    //riddle
 }
