@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Start()
     {
-        if (GameLogic.game.data.lastCheckpoint != null && GameLogic.game.data.checkpointsEnabled)
+        if (GameLogic.game.data.lastCheckpoint != Vector3.zero && GameLogic.game.data.checkpointsEnabled)
         {
             transform.position = GameLogic.game.data.lastCheckpoint;
         }
