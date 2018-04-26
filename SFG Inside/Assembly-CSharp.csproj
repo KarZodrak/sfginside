@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\code\Audio\AudioObject.cs" />
      <Compile Include="Assets\code\Audio\GameAudio.cs" />
+     <Compile Include="Assets\code\Checkpoint.cs" />
      <Compile Include="Assets\code\Core\GameData.cs" />
      <Compile Include="Assets\code\Core\GameLogic.cs" />
      <Compile Include="Assets\code\GameStates\CreditsState.cs" />
@@ -65,7 +66,10 @@
      <Compile Include="Assets\code\InteractionObject.cs" />
      <Compile Include="Assets\code\Inventory.cs" />
      <Compile Include="Assets\code\Item.cs" />
+     <Compile Include="Assets\code\MovableObject.cs" />
      <Compile Include="Assets\code\NPC\NPC.cs" />
+     <Compile Include="Assets\code\NPC\Riddle.cs" />
+     <Compile Include="Assets\code\NPC\Riddler.cs" />
      <Compile Include="Assets\code\PlayerInteraction.cs" />
      <Compile Include="Assets\code\PlayerMovement.cs" />
      <Compile Include="Assets\code\UI\CreditsUI.cs" />
