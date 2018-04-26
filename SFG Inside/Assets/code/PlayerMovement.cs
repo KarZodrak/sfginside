@@ -26,26 +26,22 @@ public class PlayerMovement : MonoBehaviour
 		_controller = GetComponent<CharacterController>();
 	}
 
-	//unity update
-	public void Update() 
+    public void Start()
+    {
+        if (GameLogic.game.data.lastCheckpoint != Vector3.zero && GameLogic.game.data.checkpointsEnabled)
+        {
+            transform.position = GameLogic.game.data.lastCheckpoint;
+        }
+    }
+
+    //unity update
+    public void Update() 
 	{
 		//check if character in not in the air
 		if (_controller.isGrounded) 
-		{	
-			//check for rotation input
-			if(Input.GetKey(KeyCode.D))
-			{
-				//execute rotation right
-				transform.Rotate(0,rotateSpeed* Time.deltaTime,0);
-			}
-			if(Input.GetKey(KeyCode.A))
-			{
-				//execute rotation left
-				transform.Rotate(0,-rotateSpeed* Time.deltaTime,0);
-			}
-			
+		{				
 			//we are grounded, so recalculate move direction directly from axes
-			_moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
+			_moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 			_moveDirection = transform.TransformDirection(_moveDirection);
 			_moveDirection *= speed;
 
