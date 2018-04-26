@@ -23,5 +23,4 @@ public class GameData
     public string speakerName = "";
     public List<string> activeDialog = new List<string>();
 
-    //riddle
 }
