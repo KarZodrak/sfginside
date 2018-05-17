@@ -17,6 +17,7 @@ public class GameData
     //save point
     public bool checkpointsEnabled = true;
     public Vector3 lastCheckpoint = Vector3.zero;
+    public Quaternion lastCheckpointRotation = Quaternion.identity;
 
     //dialogs
     public int activeDialogIndex = 0;
