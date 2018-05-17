@@ -1,8 +1,21 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:SFG Inside/Assets/materials/probs.meta
 guid: 81c0a600c27681943b9883034fc68310
 folderAsset: yes
 timeCreated: 1523516318
 licenseType: Pro
+=======
+<<<<<<< HEAD
+guid: 24a8b1078d60947d29cb7119383db0a4
+folderAsset: yes
+timeCreated: 1521716058
+=======
+guid: 11a594bce183d3947a8916fa203eef1c
+folderAsset: yes
+timeCreated: 1521712049
+>>>>>>> origin/marielle
+licenseType: Free
+>>>>>>> f7ef64f9f95abb2b3e6b25d75327608e134cc766:SFG Inside/Assets/Objects.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
