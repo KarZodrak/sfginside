@@ -17,10 +17,12 @@ public class Riddler : MonoBehaviour
     public string riddleText = "1+1=?";
     public string answer_correct = "2";
     public string[] answers_wrong;
+    public GameObject resetPosition;
 
     private int correctAnswer = 0;
     private int wrongAnswerIndex = 0;
     private bool riddleActive = false;
+    private GameObject theplayer;
 
     // unity awake
     public void Awake() 
@@ -41,11 +43,11 @@ public class Riddler : MonoBehaviour
         {
             if (correctAnswer == i)
             {
-                riddlerUI.answers[i - 1].text = "(" + i + ") " + answer_correct;
+                riddlerUI.answers[i - 1].text = answer_correct;
             }
             else
             {
-                riddlerUI.answers[i - 1].text = "(" + i + ") " + answers_wrong[wrongAnswerIndex];
+                riddlerUI.answers[i - 1].text = answers_wrong[wrongAnswerIndex];
                 wrongAnswerIndex++;
             }
         }
@@ -55,8 +57,10 @@ public class Riddler : MonoBehaviour
 	// contains things that happen, when itme is picked up
 	public void startDialog(GameObject player)
 	{
-		//check if pickup is within range
-		if (Vector3.Distance(player.transform.position, transform.position) <= interactionRange)
+        theplayer = player;
+
+        //check if pickup is within range
+        if (Vector3.Distance(player.transform.position, transform.position) <= interactionRange)
 		{
             //activate riddle
             riddleActive = true;
@@ -83,11 +87,14 @@ public class Riddler : MonoBehaviour
                     (Input.GetKey(KeyCode.Alpha3) && correctAnswer == 3) ||
                     (Input.GetKey(KeyCode.Alpha4) && correctAnswer == 4))
             {
-                //TODO: WIN
+                // WIN
+                gameObject.SetActive(false);
             }
             else
             {
-                //TODO: LOOSE
+                //LOOSE
+                theplayer.transform.position = resetPosition.transform.position;
+
             }
             riddleActive = false;
             riddlerUI.riddlerPanel.SetActive(false);
