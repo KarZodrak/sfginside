@@ -44,6 +44,11 @@ public class PlayerInteraction : MonoBehaviour
                     // get interaction component and execute its interaction
                     hit.transform.GetComponent<NPC>().startDialog(gameObject);
                 }
+                else if (hit.collider.tag == "Riddler")
+                {
+                    // get interaction component and execute its interaction
+                    hit.transform.GetComponent<Riddler>().startDialog(gameObject);
+                }
                 //check if we clicked on an interaction object
                 else if (hit.collider.tag == "InteractionObject")
 				{
