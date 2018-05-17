@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         if (GameLogic.game.data.lastCheckpoint != Vector3.zero && GameLogic.game.data.checkpointsEnabled)
         {
             transform.position = GameLogic.game.data.lastCheckpoint;
+            transform.rotation = GameLogic.game.data.lastCheckpointRotation;
         }
     }
 

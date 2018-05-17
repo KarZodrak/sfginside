@@ -320,8 +320,8 @@
     <Compile Include="Assets\code\Item.cs" />
     <Compile Include="Assets\code\MovableObject.cs" />
     <Compile Include="Assets\code\NPC\NPC.cs" />
-    <Compile Include="Assets\code\NPC\Riddle.cs" />
     <Compile Include="Assets\code\NPC\Riddler.cs" />
+    <Compile Include="Assets\code\NPC\RiddlerUI.cs" />
     <Compile Include="Assets\code\PlayerInteraction.cs" />
     <Compile Include="Assets\code\PlayerMovement.cs" />
     <Compile Include="Assets\code\UI\CreditsUI.cs" />
