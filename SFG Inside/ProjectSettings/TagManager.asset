@@ -7,6 +7,7 @@ TagManager:
   - InteractionObject
   - Item
   - NPC
+  - Riddler
   layers:
   - Default
   - TransparentFX

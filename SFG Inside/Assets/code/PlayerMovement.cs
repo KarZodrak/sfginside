@@ -26,8 +26,16 @@ public class PlayerMovement : MonoBehaviour
 		_controller = GetComponent<CharacterController>();
 	}
 
-	//unity update
-	public void Update() 
+    public void Start()
+    {
+        if (GameLogic.game.data.lastCheckpoint != Vector3.zero && GameLogic.game.data.checkpointsEnabled)
+        {
+            transform.position = GameLogic.game.data.lastCheckpoint;
+        }
+    }
+
+    //unity update
+    public void Update() 
 	{
 		//check if character in not in the air
 		if (_controller.isGrounded) 
