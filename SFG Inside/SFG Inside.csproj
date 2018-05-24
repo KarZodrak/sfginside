@@ -312,8 +312,8 @@
     <Compile Include="Assets\code\UI\MainMenuUI.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\models\LowPoly Fantasy Monsters Pack Ver1.0_Demo\READ ME FIRST!!!\character setup guide link.txt" />
-    <None Include="Assets\models\LowPoly Fantasy Monsters Pack Ver1.0_Demo\READ ME FIRST!!!\read me.txt" />
+    <None Include="Assets\IMD-Objects\models\LowPoly Fantasy Monsters Pack Ver1.0_Demo\READ ME FIRST!!!\character setup guide link.txt" />
+    <None Include="Assets\IMD-Objects\models\LowPoly Fantasy Monsters Pack Ver1.0_Demo\READ ME FIRST!!!\read me.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
