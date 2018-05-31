@@ -54,6 +54,7 @@
      <Compile Include="Assets\code\Audio\AudioObject.cs" />
      <Compile Include="Assets\code\Audio\GameAudio.cs" />
      <Compile Include="Assets\code\Checkpoint.cs" />
+     <Compile Include="Assets\code\ColorMachine.cs" />
      <Compile Include="Assets\code\Core\GameData.cs" />
      <Compile Include="Assets\code\Core\GameLogic.cs" />
      <Compile Include="Assets\code\GameStates\CreditsState.cs" />
@@ -157,7 +158,6 @@
      <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
-     <None Include="Assets\effects\colorShader.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
