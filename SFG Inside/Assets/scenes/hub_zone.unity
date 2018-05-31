@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 4341481}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -939,7 +939,7 @@ GameObject:
   - component: {fileID: 285109618}
   m_Layer: 0
   m_Name: interaction
-  m_TagString: Untagged
+  m_TagString: InteractionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2161,7 +2161,7 @@ GameObject:
   - component: {fileID: 528587209}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2363,7 +2363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &559094537
 Transform:
   m_ObjectHideFlags: 0
@@ -2477,7 +2477,7 @@ GameObject:
   - component: {fileID: 605161813}
   m_Layer: 0
   m_Name: Button_Colored
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2561,7 +2561,7 @@ GameObject:
   - component: {fileID: 672849317}
   m_Layer: 0
   m_Name: Ceiling
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2950,7 +2950,7 @@ GameObject:
   - component: {fileID: 797300934}
   m_Layer: 0
   m_Name: Ceiling
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3243,7 +3243,7 @@ GameObject:
   - component: {fileID: 844055821}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3904,7 +3904,7 @@ GameObject:
   - component: {fileID: 952844994}
   m_Layer: 0
   m_Name: interaction
-  m_TagString: Untagged
+  m_TagString: InteractionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4285,7 +4285,7 @@ GameObject:
   - component: {fileID: 1039993700}
   m_Layer: 0
   m_Name: Button_Colored
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5278,7 +5278,7 @@ GameObject:
   - component: {fileID: 1320972873}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5808,7 +5808,7 @@ GameObject:
   - component: {fileID: 1419678135}
   m_Layer: 0
   m_Name: Ceiling
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6629,7 +6629,7 @@ GameObject:
   - component: {fileID: 1670446266}
   m_Layer: 0
   m_Name: Button_Colored
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6912,7 +6912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1750621654
 Transform:
   m_ObjectHideFlags: 0
@@ -7343,7 +7343,7 @@ GameObject:
   - component: {fileID: 1830547047}
   m_Layer: 0
   m_Name: interaction
-  m_TagString: Untagged
+  m_TagString: InteractionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7870,7 +7870,7 @@ GameObject:
   - component: {fileID: 1971499966}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8506,7 +8506,7 @@ GameObject:
   - component: {fileID: 2073171494}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: InteractionObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
