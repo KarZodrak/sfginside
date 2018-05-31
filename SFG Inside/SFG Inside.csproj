@@ -306,6 +306,7 @@
     <Compile Include="Assets\code\Audio\AudioObject.cs" />
     <Compile Include="Assets\code\Audio\GameAudio.cs" />
     <Compile Include="Assets\code\Checkpoint.cs" />
+    <Compile Include="Assets\code\ColorMachine.cs" />
     <Compile Include="Assets\code\Core\GameData.cs" />
     <Compile Include="Assets\code\Core\GameLogic.cs" />
     <Compile Include="Assets\code\GameStates\CreditsState.cs" />
@@ -418,7 +419,6 @@
     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
     <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
-    <None Include="Assets\effects\colorShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
