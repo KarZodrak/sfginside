@@ -51,17 +51,11 @@ public class InteractionObject : MonoBehaviour
     }
 
     //execute action depending on the designers setup
-    public void doAction(GameObject player, Item itemInHand = null)
+    public void doAction(GameObject player)
 	{
 		// check if player is allowed to exectue the action
-		if (isActionAllowed(player, itemInHand))
+		if (isActionAllowed(player))
 		{
-			// remove itemathand
-			if (itemInHand != null)
-			{
-				GameLogic.game.inventory.removeItem(itemInHand);
-			}
-
 			// activate objects
 			if (activateObjects.Length > 0)
 			{
@@ -106,7 +100,7 @@ public class InteractionObject : MonoBehaviour
 	}
 
 	//checks all the requirements are met for an action
-	private bool isActionAllowed(GameObject player, Item itemInHand = null)
+	private bool isActionAllowed(GameObject player)
 	{
 		// check if active
 		if (!interactionEnabled)
@@ -121,9 +115,9 @@ public class InteractionObject : MonoBehaviour
             return false;
 		}
 		// check if item requirement is ok
-		if ((neededItem == "" && itemInHand != null) || (neededItem != "" && (itemInHand == null || neededItem != itemInHand.name)))
+		if (neededItem != "" && !GameLogic.game.inventory.hasItemInInventory(neededItem))
 		{
-			Debug.Log("'" + itemInHand + "' is wrong item for " + gameObject.name + ". (needs '" + neededItem + "')");
+            Debug.Log("'" + neededItem + "' is not in your inventory.");
 			return false;
 		}
 		return true;

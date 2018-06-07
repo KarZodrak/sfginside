@@ -65,6 +65,7 @@ public class Riddler : MonoBehaviour
             //activate riddle
             riddleActive = true;
             riddlerUI.riddlerPanel.SetActive(true);
+            GameLogic.game.data.gamePaused = true;
 
             //play audio, if available
             if (npcAudio != null)
@@ -98,6 +99,7 @@ public class Riddler : MonoBehaviour
             }
             riddleActive = false;
             riddlerUI.riddlerPanel.SetActive(false);
+            GameLogic.game.data.gamePaused = false;
         }
     }
 }
