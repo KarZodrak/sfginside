@@ -32,9 +32,20 @@ public class Inventory
 	{
 		return _items.Contains(item);
 	}
+    public bool hasItemInInventory(string itemName)
+    {
+        foreach (Item item in _items)
+        {
+            if (item.name == itemName || item.overwriteName == itemName)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
-	// fetch all items wihtin the inventory
-	public List<Item> getItems()
+    // fetch all items wihtin the inventory
+    public List<Item> getItems()
 	{
 		return _items;
 	}
