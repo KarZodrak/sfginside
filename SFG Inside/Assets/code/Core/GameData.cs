@@ -18,6 +18,7 @@ public class GameData
     public bool checkpointsEnabled = true;
     public Vector3 lastCheckpoint = Vector3.zero;
     public Quaternion lastCheckpointRotation = Quaternion.identity;
+    public Quaternion lastCheckpointRotationMouse = Quaternion.identity;
 
     //dialogs
     public int activeDialogIndex = 0;

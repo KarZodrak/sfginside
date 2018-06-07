@@ -14,11 +14,13 @@ public class Checkpoint : MonoBehaviour
             {
                 GameLogic.game.data.lastCheckpoint = resetPoint.transform.position;
                 GameLogic.game.data.lastCheckpointRotation = resetPoint.transform.rotation;
+                GameLogic.game.data.lastCheckpointRotationMouse = resetPoint.transform.rotation; 
             }
             else
             {
                 GameLogic.game.data.lastCheckpoint = other.transform.position;
                 GameLogic.game.data.lastCheckpointRotation = other.transform.rotation;
+                GameLogic.game.data.lastCheckpointRotationMouse = other.GetComponentInChildren<SmoothMouseLook>().transform.rotation;
             }
         }
     }

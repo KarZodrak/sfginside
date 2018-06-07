@@ -15,7 +15,8 @@ public class PlayerMovement : MonoBehaviour
 	public float rotateSpeed = 70f;
 	public float jumpSpeed = 8.0f;
 	public float gravity = 20.0f;
-	
+
+    private Transform _mouseLookObject;
 	private Vector3 _moveDirection = Vector3.zero;
 	private CharacterController _controller;
 
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
 	{
 		//fetch character controller
 		_controller = GetComponent<CharacterController>();
+        _mouseLookObject = GetComponentInChildren<SmoothMouseLook>().transform;
 	}
 
     public void Start()
@@ -32,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = GameLogic.game.data.lastCheckpoint;
             transform.rotation = GameLogic.game.data.lastCheckpointRotation;
+            _mouseLookObject.transform.rotation = GameLogic.game.data.lastCheckpointRotationMouse;
         }
     }
 
