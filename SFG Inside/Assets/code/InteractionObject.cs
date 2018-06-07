@@ -134,6 +134,7 @@ public class InteractionObject : MonoBehaviour
             GameLogic.game.data.levelName = "hub_zone";
             //unpause game
             GameLogic.game.data.gamePaused = false;
+            GameLogic.game.data.lastCheckpoint = Vector3.zero;
             //switch to play state
             GameLogic.game.changeState(new PlayState());
             break;
@@ -142,6 +143,7 @@ public class InteractionObject : MonoBehaviour
             GameLogic.game.data.levelName = "red_zone";
             //unpause game
             GameLogic.game.data.gamePaused = false;
+            GameLogic.game.data.lastCheckpoint = Vector3.zero;
             //switch to play state
             GameLogic.game.changeState(new PlayState());
             break;
@@ -150,6 +152,7 @@ public class InteractionObject : MonoBehaviour
             GameLogic.game.data.levelName = "green_zone";
             //unpause game
             GameLogic.game.data.gamePaused = false;
+            GameLogic.game.data.lastCheckpoint = Vector3.zero;
             //switch to play state
             GameLogic.game.changeState(new PlayState());
             break;
@@ -158,6 +161,7 @@ public class InteractionObject : MonoBehaviour
             GameLogic.game.data.levelName = "blue_zone";
             //unpause game
             GameLogic.game.data.gamePaused = false;
+            GameLogic.game.data.lastCheckpoint = Vector3.zero;
             //switch to play state
             GameLogic.game.changeState(new PlayState());
             break;
