@@ -22,7 +22,7 @@ public class InGameUI : MonoBehaviour
     public void Start ()
     {
         //update button text
-        pauseButtonText.text = "Pause";
+        pauseButtonText.text = "Pause <ESC>";
         //deactivate pause menu
         menuPanel.SetActive(false);
     }
@@ -50,6 +50,12 @@ public class InGameUI : MonoBehaviour
             //update drag item position
             dragItem.transform.position = Input.mousePosition;
         }
+
+        //check for escaop key
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            togglePause();
+        }
     }
 
     //toggle pause state
@@ -61,17 +67,20 @@ public class InGameUI : MonoBehaviour
             GameLogic.game.data.gamePaused = true;
             //update button text
             pauseButtonText.text = "Un-Pause";
+
             //activate pause menu
             menuPanel.SetActive(true);
+            Cursor.visible = true;
         }
         else
         {
             //set pause value
             GameLogic.game.data.gamePaused = false;
             //update button text
-            pauseButtonText.text = "Pause";
+            pauseButtonText.text = "Pause <ESC>";
             //deactivate pause menu
             menuPanel.SetActive(false);
+            Cursor.visible = false;
         }
     }
 

@@ -115,7 +115,7 @@ public class InteractionObject : MonoBehaviour
             return false;
 		}
 		// check if item requirement is ok
-		if (neededItem != "" && GameLogic.game.inventory.hasItemInInventory(neededItem))
+		if (neededItem != "" && !GameLogic.game.inventory.hasItemInInventory(neededItem))
 		{
             Debug.Log("'" + neededItem + "' is not in your inventory.");
 			return false;

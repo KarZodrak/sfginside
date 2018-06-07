@@ -11,13 +11,7 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public float interactionRadius = 4.0f;
-
-    public void Start()
-    {
-        //hide cursor
-        //Cursor.visible = false;
-    }
+    public float interactionRadius = 2.0f;
 
     //unity update
     public void Update () 
@@ -36,13 +30,14 @@ public class PlayerInteraction : MonoBehaviour
                     if (interactionObject == null)
                     {
                         interactionObject = hit.collider.gameObject;
-                        distOfClosestObject = Vector3.Distance(transform.position, interactionObject.transform.position);
+                        distOfClosestObject = Vector3.Distance(transform.position, hit.transform.position);
                     }
                     else
                     {
-                        if (distOfClosestObject > Vector3.Distance(transform.position, hit.collider.transform.position))
+                        if (distOfClosestObject > Vector3.Distance(transform.position, hit.transform.position))
                         {
                             interactionObject = hit.collider.gameObject;
+                            distOfClosestObject = Vector3.Distance(transform.position, hit.transform.position);
                         }
                     }
                 }

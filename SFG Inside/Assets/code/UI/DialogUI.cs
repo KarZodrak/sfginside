@@ -44,6 +44,8 @@ public class DialogUI : MonoBehaviour
             GameLogic.game.data.activeDialog = new List<string>();
             GameLogic.game.data.activeDialogIndex = 0;
             GameLogic.game.data.speakerName = "";
+            GameLogic.game.data.gamePaused = false;
+            Cursor.visible = false;
         }
     }
          
