@@ -2,32 +2,28 @@
 # Unity generated #
 # =============== #
 [Tt]emp/
-[Bb]uild
-*/[Bb]uilds/
-*/[Ll]ibrary/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ibrary/
 sysinfo.txt
 *.stackdump
-/Assets/AssetStoreTools*
-*.apk
-*.unitypackage
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
-[Ee]xported[Oo]bj/
-.vs/
-/*.userprefs
-/*.csproj
-/*.pidb
+vs/
+*.userprefs
+*.csproj
+*.pidb
 *.pidb.meta
-/*.suo
-/*.sln*
-/*.user
-/*.unityproj
-/*.booproj
+*.suo
+*.sln*
+*.user
+*.unityproj
+*.booproj
 .consulo/
-/*.tmp
-/*.svd
+*.tmp
+*.svd
  
 # ============ #
 # OS generated #
@@ -40,5 +36,4 @@ Icon?
 ehthumbs.db
 [Tt]humbs.db
 [Dd]esktop.ini
-Corridor/Library/ShaderCache/
-Corridor/Library/metadata/
+
