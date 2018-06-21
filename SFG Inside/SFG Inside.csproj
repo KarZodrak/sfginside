@@ -309,6 +309,7 @@
     <Compile Include="Assets\code\ColorMachine.cs" />
     <Compile Include="Assets\code\Core\GameData.cs" />
     <Compile Include="Assets\code\Core\GameLogic.cs" />
+    <Compile Include="Assets\code\Custom_Difan\meme_move.cs" />
     <Compile Include="Assets\code\GameStates\CreditsState.cs" />
     <Compile Include="Assets\code\GameStates\EndGameState.cs" />
     <Compile Include="Assets\code\GameStates\IGameState.cs" />
@@ -421,6 +422,7 @@
     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
     <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+    <None Include="Assets\Textures\skybox\ely_nevada.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
