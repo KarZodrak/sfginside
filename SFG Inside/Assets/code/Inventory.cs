@@ -26,6 +26,21 @@ public class Inventory
 			_items.Remove(item);
 		}
 	}
+    public void removeItem(string itemName)
+    {
+        Item itemToRemove = null;
+        foreach (Item item in _items)
+        {
+            if (item.name == itemName || item.overwriteName == itemName)
+            {
+                itemToRemove = item;
+            }
+        }
+        if (itemToRemove != null)
+        {
+            _items.Remove(itemToRemove);
+        }
+    }
 
 	// check if an item is in the inventory
 	public bool hasItemInInventory(Item item)

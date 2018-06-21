@@ -11,7 +11,9 @@ public class ColorMachine : MonoBehaviour
     public GameObject bucketG;
     public GameObject bucketB;
     public GameObject smoke;
-    
+    public GameObject qGeber2;
+    public GameObject qGeber3;
+
     public PostProcessingBehaviour ppBehav;
     public PostProcessingProfile pp_R;
     public PostProcessingProfile pp_G;
@@ -75,6 +77,8 @@ public class ColorMachine : MonoBehaviour
             {
                 ppBehav.profile = pp_RGB;
                 smoke.SetActive(true);
+                qGeber2.SetActive(false);
+                qGeber3.SetActive(true);
                 gate.SetActive(false);
                 machnieEnabled = true;
             }

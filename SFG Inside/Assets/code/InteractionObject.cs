@@ -56,8 +56,14 @@ public class InteractionObject : MonoBehaviour
 		// check if player is allowed to exectue the action
 		if (isActionAllowed(player))
 		{
-			// activate objects
-			if (activateObjects.Length > 0)
+
+            if (GameLogic.game.inventory.hasItemInInventory(neededItem))
+            {
+                GameLogic.game.inventory.removeItem(neededItem);
+            }
+
+            // activate objects
+            if (activateObjects.Length > 0)
 			{
 				for (int i = 0; i<activateObjects.Length; i++)
 				{
