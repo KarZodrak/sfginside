@@ -13,24 +13,14 @@ public class PlayState : IGameState
 	{
         //load corect level (read levelindex form data)
         SceneManager.LoadScene(GameLogic.game.data.levelName);
-	}
 
-	public void update(GameLogic game)
+        //hide cursor
+        Cursor.visible = false;
+    }
+
+    public void update(GameLogic game)
 	{
-		//check for escaop key
-		if (Input.GetKeyDown(KeyCode.Escape))
-		{
-			//if game is not paused, pause game
-			if (game.data.gamePaused) 
-			{
-				game.data.gamePaused = false;
-			}
-			//if game is paused, unpause game
-			else
-			{
-				game.data.gamePaused = true;
-			}
-		}
+		//do nothing
 	}
 
 	public void lateUpdate(GameLogic game)
@@ -40,6 +30,7 @@ public class PlayState : IGameState
 
 	public void exitState(GameLogic game)
 	{
-		//do nothing
-	}
+        //hide cursor
+        Cursor.visible = true;
+    }
 }

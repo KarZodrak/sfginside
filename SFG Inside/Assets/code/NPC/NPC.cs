@@ -37,6 +37,8 @@ public class NPC : MonoBehaviour
             //activate dialog
             GameLogic.game.data.activeDialog = npcDialog;
             GameLogic.game.data.speakerName = npcName;
+            GameLogic.game.data.gamePaused = true;
+            Cursor.visible = true;
 
             //play audio, if available
             if (npcAudio != null)
