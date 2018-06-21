@@ -174,12 +174,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4241330796446122}
   - component: {fileID: 33964714383155788}
-  - component: {fileID: 136162372294954990}
   - component: {fileID: 23741806379009160}
   - component: {fileID: 143462065084578464}
   - component: {fileID: 114587461274072688}
   - component: {fileID: 114677663412326576}
   - component: {fileID: 114941722819398544}
+  - component: {fileID: 64936208449284880}
   m_Layer: 0
   m_Name: Player_Red
   m_TagString: Player
@@ -1058,6 +1058,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1473058368152616}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64936208449284880
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1473058368152616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!81 &81589220809560966
 AudioListener:
   m_ObjectHideFlags: 1
@@ -1132,7 +1146,7 @@ MonoBehaviour:
   speed: 10
   rotateSpeed: 70
   jumpSpeed: 8
-  gravity: 20
+  gravity: 18
 --- !u!114 &114601981779609770
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1146,12 +1160,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axes: 2
   sensitivityX: 2
-  sensitivityY: 2
+  sensitivityY: 6
   minimumX: -360
   maximumX: 360
   minimumY: -60
   maximumY: 60
-  frameCounter: 20
+  frameCounter: 10
 --- !u!114 &114677663412326576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1176,13 +1190,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axes: 1
-  sensitivityX: 4
+  sensitivityX: 6
   sensitivityY: 4
   minimumX: -360
   maximumX: 360
   minimumY: -60
   maximumY: 60
-  frameCounter: 50
+  frameCounter: 10
 --- !u!124 &124310858269353916
 Behaviour:
   m_ObjectHideFlags: 1
@@ -1190,19 +1204,6 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368115466231976}
   m_Enabled: 1
---- !u!136 &136162372294954990
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1473058368152616}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137429674284668194
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

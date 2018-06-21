@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 82aa88e5383cd49b0a955346cc535f3b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 436644194}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.5317601, g: 0.52133846, b: 0.5176407, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1624,7 +1624,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1166785106483836, guid: cf405da13c944fb4b83cc66262a5e2a4, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cf405da13c944fb4b83cc66262a5e2a4, type: 2}
@@ -1670,7 +1670,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214350435008870, guid: bf7e70f5ba1c29c4aae82897b4d5a098, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf7e70f5ba1c29c4aae82897b4d5a098, type: 2}
@@ -2111,6 +2111,10 @@ Prefab:
     - target: {fileID: 2000000, guid: ebc6450fa8f334148b2569b1a5eefe2c, type: 2}
       propertyPath: m_BackGroundColor.b
       value: 0.24772921
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: ebc6450fa8f334148b2569b1a5eefe2c, type: 2}
+      propertyPath: m_ClearFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ebc6450fa8f334148b2569b1a5eefe2c, type: 2}
@@ -2916,6 +2920,7 @@ MonoBehaviour:
   bucketG: {fileID: 1324603425}
   bucketB: {fileID: 439588366}
   smoke: {fileID: 1689992223}
+  qGeber1: {fileID: 1878095963}
   qGeber2: {fileID: 1452242760}
   qGeber3: {fileID: 470648229}
   ppBehav: {fileID: 1439760436}
@@ -6291,7 +6296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1878095964
 Transform:
   m_ObjectHideFlags: 0
@@ -7237,7 +7242,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1527002866715874, guid: a1c8c6334d1b44a40a359875de5625e8, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1c8c6334d1b44a40a359875de5625e8, type: 2}

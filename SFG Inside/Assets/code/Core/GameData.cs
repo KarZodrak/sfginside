@@ -25,4 +25,9 @@ public class GameData
     public string speakerName = "";
     public List<string> activeDialog = new List<string>();
 
+    //hub state
+    public int questgeber = 1;
+    public bool machine_red = false;
+    public bool machine_green = false;
+    public bool machine_blue = false;
 }

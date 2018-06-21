@@ -20,11 +20,17 @@ public class PlayerMovement : MonoBehaviour
 	private Vector3 _moveDirection = Vector3.zero;
 	private CharacterController _controller;
 
-	//unity awake
-	public void Awake()
-	{
-		//fetch character controller
-		_controller = GetComponent<CharacterController>();
+    //unity awake
+    public void Awake()
+    {
+        if (GameLogic.game.data.lastCheckpoint == Vector3.zero)
+        {
+            GameLogic.game.data.lastCheckpoint = transform.position;
+            GameLogic.game.data.lastCheckpointRotation = transform.rotation;
+        }
+
+        //fetch character controller
+        _controller = GetComponent<CharacterController>();
         _mouseLookObject = GetComponentInChildren<SmoothMouseLook>().transform;
 	}
 

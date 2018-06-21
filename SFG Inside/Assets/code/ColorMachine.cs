@@ -11,6 +11,7 @@ public class ColorMachine : MonoBehaviour
     public GameObject bucketG;
     public GameObject bucketB;
     public GameObject smoke;
+    public GameObject qGeber1;
     public GameObject qGeber2;
     public GameObject qGeber3;
 
@@ -28,11 +29,47 @@ public class ColorMachine : MonoBehaviour
 
     void Start ()
     {
-		
-	}
+        if (GameLogic.game.data.machine_red)
+        {
+            bucketR.SetActive(true);
+        }
+        if (GameLogic.game.data.machine_green)
+        {
+            bucketG.SetActive(true);
+        }
+        if (GameLogic.game.data.machine_blue)
+        {
+            bucketB.SetActive(true);
+        }
+
+        if (GameLogic.game.data.questgeber == 1)
+        {
+            qGeber1.SetActive(true);
+        }
+        else if (GameLogic.game.data.questgeber == 2)
+        {
+            qGeber2.SetActive(true);
+        }
+
+        GameLogic.game.data.questgeber = 2;
+    }
 	
 	void Update ()
     {
+
+        if (bucketR.activeSelf)
+        {
+            GameLogic.game.data.machine_red = true;
+        }
+        if (bucketG.activeSelf)
+        {
+            GameLogic.game.data.machine_green = true;
+        }
+        if (bucketB.activeSelf)
+        {
+            GameLogic.game.data.machine_blue = true;
+        }
+
         if (!machnieEnabled)
         {
             if (colorIndex == 0)
@@ -77,6 +114,7 @@ public class ColorMachine : MonoBehaviour
             {
                 ppBehav.profile = pp_RGB;
                 smoke.SetActive(true);
+                qGeber1.SetActive(false);
                 qGeber2.SetActive(false);
                 qGeber3.SetActive(true);
                 gate.SetActive(false);
