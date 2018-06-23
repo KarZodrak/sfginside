@@ -15,6 +15,8 @@ public class MainMenuUI : MonoBehaviour
         GameLogic.game.data.levelName = levelname;
         //unpause game
         GameLogic.game.data.gamePaused = false;
+        //set position
+        GameLogic.game.data.lastCheckpoint = Vector3.zero;
         //switch to play state
         GameLogic.game.changeState(new PlayState());
     }
